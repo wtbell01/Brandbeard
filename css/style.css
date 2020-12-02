@@ -1,0 +1,533 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+
+body{
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+}
+
+:root{
+  --dark-black:#000000;
+  --medium-black:#1c1b1b;
+  --dark-grey:#363636;
+  --medium-grey:#6a6a6a;
+  --grey:#d4d4d4;
+  --light-grey:#ddd;
+  --white:#ffffff;
+  --whitesmoke:#f5f5f5;
+  --salmon:#ff8d6b;
+  --tan:#e0b66c;
+}
+
+a{
+  text-decoration: none;
+}
+
+li{
+  list-style: none;
+}
+
+/*Banner*/
+.banner{
+  text-align: center;
+  padding: .6rem 0;
+  background-color: var(--dark-black);
+}
+
+.banner-text{
+  color: var(--white);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: .175rem;
+  font-size: .65rem;
+}
+
+/*span in the banner text*/
+.banner-special-text{
+  color: var(--tan);
+}
+
+/*Header*/
+.header-container{
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background-color: var(--white);
+  border-bottom: solid var(--light-grey) thin;
+}
+
+/*Header top*/
+.header-top{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  margin: .75rem auto 0 auto;
+  width: 95%;
+}
+
+.header-logo{
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  font-size: 2.7rem;
+}
+
+.header-logo-link{
+  color: var(--dark-black);
+}
+
+/*Container in the header holding the icons*/
+.header-icon-container{
+  display: flex;
+  justify-self: flex-end;
+  align-items: center;
+}
+
+/*Individual Icons in the header*/
+.header-icon-container i{
+  margin-right: 1.5rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.header-bottom{
+  margin-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.header-menu{
+  display: flex;
+  justify-content: center;
+}
+
+.header-menu li{
+  font-size: .75rem;
+  letter-spacing: .15rem;
+  margin: 0 1.5rem 0 1.5rem;
+  text-transform: uppercase;
+}
+
+.header-menu a{
+  color: var(--medium-black);
+}
+
+.showcase{
+  position: relative;
+  height: 80vh;
+}
+
+.showcase-image{
+  height: 100%;
+  width: 100%;
+}
+
+/*Background color on the showcase*/
+.showcase::after{
+  content: "";
+  background-color: rgba(0,0,0,0.9);
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.showcase-text-container{
+  position: absolute;
+  top: 25%;
+  color: var(--white);
+  z-index: 1;
+  margin: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.showcase-text{
+  text-transform: uppercase;
+  letter-spacing: .3rem;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+}
+
+.showcase-button{
+  background-color: var(--white);
+  color: var(--dark-grey);
+  border: solid var(--dark-grey) thin;
+  border-radius: 1px;
+  padding: .85rem 1.5rem;
+  letter-spacing: .15rem;
+  text-transform: uppercase;
+  font-size: .75rem;
+}
+
+/*showcase button on hover*/
+.showcase-button:hover{
+  background-color: transparent;
+  color: var(--white);
+  border: solid var(--white) thin;
+}
+
+/*Section A*/
+.section-a{
+  background-color: var(--whitesmoke);
+  padding-bottom: 6rem;
+}
+
+/*Container holding the fragrence image on the left side and text on the right*/
+.fragrence-container{
+  display: flex;
+  width: 88%;
+  margin: 0 auto;
+  padding: 6rem 0 3rem 0;
+}
+
+.fragrence-image-container{
+  height: 90vh;
+  width: 55%;
+}
+
+.fragrence-image{
+  height: 100%;
+  width: 100%;
+}
+
+.fragrence-text-container{
+  background-color: var(--white);
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10rem 2rem 2rem 3rem;
+}
+
+.fragrence-title{
+  font-size: .85rem;
+  margin-bottom: 2rem;
+  letter-spacing: .2rem;
+  text-transform: uppercase;
+}
+
+.fragrence-subtitle{
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  letter-spacing: .2rem;
+  text-transform: uppercase;
+}
+
+/*Description text in the fragrence text container*/
+.fragrence-description{
+  font-size: .9rem;
+  line-height: 1.5rem;
+}
+
+/*fragrence list*/
+.fragrence-list{
+  margin: 3rem 0 0 0;
+  display: flex;
+  justify-content: center;
+}
+
+.fragrence-list li{
+  margin-right: 1.5rem;
+}
+
+.fragrence-list a{
+  color: var(--dark-grey);
+}
+
+.fragrence-list a:hover{
+  border-bottom: solid var(--dark-grey) thin;
+}
+
+/*Section B*/
+.section-b{
+  background: url(/img/newsletter-image.jpg) no-repeat center center/cover;
+  height: 85vh;
+  color: var(--white);
+}
+
+/*Newsletter*/
+.newsletter-text-wrap{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.newsletter-title{
+  font-size: 1.4rem;
+  letter-spacing: .2rem;
+  text-transform: uppercase;
+}
+
+.newsletter-description{
+  font-size: .9rem;
+  margin: 2rem 0 2.5rem 0;
+  width: 50%;
+  text-align: center;
+  line-height: 1.5rem;
+}
+
+/*Container for the email address input and submit button in the newsletter section*/
+.newsletter-bottom{
+  display: flex;
+  width: 50%;
+}
+
+/*newsletter input*/
+.newsletter-email{
+  background-color: transparent;
+  color: var(--whitesmoke);
+  border: solid var(--whitesmoke) thin;
+  border-radius: 1.5px;
+  font-size: .82rem;
+  padding: .85rem .5rem .85rem .75rem;
+  width: 57.5%;
+  margin-left: 1.5rem;
+}
+
+/*Changes the color of the placeholder text in the email input*/
+.newsletter-email::placeholder{
+  color: var(--whitesmoke);
+}
+
+.newsletter-button{
+  background-color: var(--whitesmoke);
+  padding: 1rem 1.7rem;
+  margin-left: 1.5rem;
+  border: none;
+  border-radius: 1px;
+  text-transform: uppercase;
+  letter-spacing: .15rem;
+  font-size: .72rem;
+  cursor: pointer;
+}
+
+.newsletter-button:hover{
+  background-color: transparent;
+  border: solid var(--whitesmoke) thin;
+  color: var(--whitesmoke);
+}
+
+/*Section C*/
+.section-c{
+  background-color: var(--whitesmoke);
+  padding: 6rem 0;
+}
+
+.blog-section-title,
+.blog-section-subtitle{
+  text-align: center;
+}
+/*Main blog title above the blog section*/
+.blog-section-title{
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+/*Blog subtitle above the blog section*/
+.blog-section-subtitle{
+  text-transform: uppercase;
+  letter-spacing: .35rem;
+  font-size: 1.7rem;
+  margin-bottom: 2.5rem;
+}
+
+/*Blog container holding all 3 individual blogs*/
+.blog-container{
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  margin: 6rem auto 8rem auto;
+}
+
+/*Individual blogs in the blog container*/
+.blog{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 31%;
+}
+
+.blog-img-container{
+  height: 40vh;
+  width: 100%;
+}
+
+.blog-img{
+  height: 100%;
+  width: 100%;
+}
+
+.blog-text-container{
+  margin: 0 auto;
+  width: 95%;
+}
+
+.blog-title{
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  color: var(--medium-black);
+  margin-top: 1rem;
+}
+
+.blog-description{
+  margin:1.5rem 0;
+  line-height: 1.5rem;
+  color:var(--medium-black);
+}
+
+/*blog link*/
+.blog-link{
+  color: var(--dark-black);
+  font-size: .9rem;
+  letter-spacing: .05rem;
+  padding-bottom: .3rem;
+  border-bottom: solid var(--dark-black) thin;
+}
+
+.blog-link:hover{
+  border-bottom: none;
+}
+
+/*Articles button*/
+.articles-button-container{
+  text-align: center;
+}
+
+.articles-button{
+  background-color: var(--medium-black);
+  color: var(--white);
+  padding: .75rem 1.2rem;
+  letter-spacing: .13rem;
+  font-size: .72rem;
+  border-radius: 1px;
+  text-transform: uppercase;
+  border: solid var(--medium-black) thin;
+}
+
+.articles-button:hover{
+  background-color: transparent;
+  color: var(--medium-black);
+  
+}
+
+
+/*Footer*/
+.footer-container{
+  margin-top: 8rem;
+}
+
+/*Top half of the footer*/
+.footer-top{
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+
+/*Bottom half of the footer*/
+.footer-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+}
+
+/*Individual titles for each footer box*/
+.footer-title{
+  text-transform: uppercase;
+  font-size: .8rem;
+  letter-spacing: .12rem;
+  font-weight: bold;
+  margin-bottom: .75rem;
+}
+
+.footer-description{
+  color: var(--medium-grey);
+  font-size: .9rem;
+}
+
+/*Footer social icon continer*/
+.footer-social-container{
+  margin-top: 1rem;
+  color: var(--medium-grey);
+}
+
+
+/*Footer social icons*/
+.footer-social-container i{
+  font-size: .95rem;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+/*Footer article list*/
+.footer-article-list li{
+  font-size: .85rem;
+  margin-bottom: .75rem;
+}
+
+.footer-article-list a{
+  color: var(--medium-grey);
+}
+
+/*footer newsletter input container*/
+.footer-newsletter-input-container{
+  margin-top: 1rem;
+}
+
+.footer-newsletter-input{
+  border: solid var(--grey) thin;
+  font-size: .8rem;
+  padding: .9rem 8rem .9rem .7rem;
+}
+
+/*footer newsletter button*/
+.footer-newsletter-button{
+  margin-top: 1.25rem;
+  border: none;
+  border-radius: 1px;
+  padding: 1rem 1.75rem;
+  font-size: .7rem;
+  letter-spacing: .2rem;
+  text-transform: uppercase;
+  background-color: var(--medium-black);
+  color: var(--white);
+  border: solid var(--medium-black) thin;
+  cursor: pointer;
+}
+
+.footer-newsletter-button:hover{
+  background-color: transparent;
+  color: var(--medium-black);
+}
+
+/*Footer bottom*/
+.footer-bottom{
+  width: 90%;
+  margin: 6rem auto 3rem auto;
+}
+
+.footer-bottom-text{
+  letter-spacing: .15rem;
+  text-transform: uppercase;
+  font-size: .7rem;
+}
+

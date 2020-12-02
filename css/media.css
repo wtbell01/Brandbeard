@@ -1,0 +1,373 @@
+:root{
+  --dark-black:#000000;
+  --medium-black:#1c1b1b;
+  --dark-grey:#363636;
+  --medium-grey:#6a6a6a;
+  --grey:#d4d4d4;
+  --light-grey:#ddd;
+  --white:#ffffff;
+  --whitesmoke:#f5f5f5;
+  --salmon:#ff8d6b;
+  --tan:#e0b66c;
+}
+
+@media(max-width:1050px){
+  .fragrence-image-container{
+    height: 65vh;
+    width: 55%;
+  }
+
+  .fragrence-text-container{
+    background-color: var(--white);
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 1rem 2rem 1rem 3rem;
+  }
+
+  .fragrence-title{
+    font-size: .75rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .fragrence-subtitle{
+    font-size: 1rem;
+    margin-bottom: 1.75rem;
+  }
+  
+  .fragrence-description{
+    font-size: .8rem;
+    line-height: 1.5rem;
+  }
+
+}
+
+@media(max-width:850px){
+  /*Removes the grey at the bottom of Section A*/
+  .section-a{
+    background-color: var(--whitesmoke);
+    padding-bottom: 0;
+  }
+
+  .fragrence-container{
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+  }
+  
+  .fragrence-image-container{
+    height: 90vh;
+    width: 100%;
+    
+  }
+  
+  .fragrence-image{
+    height: 100%;
+    width: 100%;
+  }
+  
+  .fragrence-text-container{
+    position: absolute;
+    background-color: transparent;
+    width: 100%;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    z-index: 1;
+    padding: 3rem 0 0 0;
+  }
+
+  .fragrence-title{
+    margin-bottom: 1rem;
+  }
+
+  .fragrence-subtitle{
+    font-size: 1.5rem;
+  }
+
+  .fragrence-description{
+    font-size: 1rem;
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  /*fragrence list*/
+  .fragrence-list{
+    display: none;
+  }
+
+  /*Blog container*/
+  .blog-container{
+    width: 99%;
+  }
+
+  .blog{
+    width: 31%;
+  }
+
+  .blog-img-container{
+    height: 35vh;
+  }
+
+  .blog-title{
+    font-size: 1rem;
+  }
+  
+  .blog-description{
+    font-size: .85rem;
+  }
+  
+  /*Footer*/
+  .footer-top{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+  }
+
+  .footer-box{
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+
+  .footer-description{
+    width: 80%;
+  }
+
+  
+
+}
+
+/*Header and showcase*/
+@media(max-width:735px){
+  /*Header*/
+  .header-logo{
+  font-size: 2.3rem;
+}
+
+  .header-icon-container{
+    display: none
+  }
+
+  .header-menu li{
+    font-size: .7rem;
+    margin: 0 .5rem 0 .5rem;
+  }
+
+  /*Showcase*/
+  .showcase-text{
+    font-size: 1.05rem;
+  }
+
+  .showcase-button{
+    font-size: .7rem;
+  }
+  
+  /*newsletter container holding email input and submit button*/
+  .newsletter-bottom{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .newsletter-email{
+    margin: 0 0 2rem 0;
+    padding: .85rem .5rem .85rem .75rem;
+    width: 65%;
+  }
+  
+
+  .blog-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    margin: 6rem auto 8rem auto;
+  }
+
+  .blog{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 80%;
+    margin-bottom: 3rem;
+  }
+
+  .blog-img-container{
+    height: 50vh;
+    width: 100%;
+  }
+
+}
+
+@media(max-width:530px){
+  .showcase-text{
+    width: 80%;
+    margin: 0 auto 2rem auto;
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 1.8rem;
+  }
+}
+
+@media(max-width:415px){
+  .header-menu li{
+    font-size: .65rem;
+    letter-spacing: .1rem;
+  }
+
+  .showcase{
+    height: 53vh;
+  }
+
+  .fragrence-image-container{
+    height: 53vh;
+  }
+  
+  /*Text on the old money fragrence image*/
+  .fragrence-description{
+    font-size: .8rem;
+    line-height: 1.3rem;
+  }
+
+  /*Section B - image for the newsletter section*/
+  .section-b{
+    height: 58vh;
+  }
+
+  /*Newsletter*/
+  .newsletter-text-wrap{
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 5rem;
+  }
+
+  .newsletter-title{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+
+  .newsletter-description{
+    font-size: .85rem;
+    margin: 1.5rem 0 2rem 0;
+    text-align: center;
+    line-height: 1.2rem;
+    width: 65%;
+  }
+
+  .newsletter-button{
+    padding: .8rem 1.5rem;
+  }
+  
+  /*Container holding all blog items except the view article button*/
+  .blog-container{
+    margin: 6rem auto 3rem auto;
+  }
+
+  /*Blog image container for each individual blog*/
+  .blog-img-container{
+    height: 30vh;
+  }
+}
+
+@media(max-width:375px){
+
+  .showcase{
+    height: 58vh;
+  }
+  
+  /*Fragrence section*/
+  .fragrence-image-container{
+    height: 65vh;
+  }
+
+  .fragrence-title{
+    font-size: .75rem;
+  }
+  
+  .fragrence-subtitle{
+    font-size: 1.15rem;
+  }
+  
+  /*Text on the old money fragrence image*/
+  .fragrence-description{
+    font-size: .8rem;
+    line-height: 1.3rem;
+  }
+
+  /*Section B - image for the newsletter section*/
+  .section-b{
+    height: 65vh;
+  }
+}
+
+@media(max-width:320px){
+  .header-menu li{
+    font-size: .525rem;
+    margin:0 .3rem 0 .3rem;
+    letter-spacing: .1rem;
+  }
+
+  .showcase{
+    height: 68vh;
+  }
+
+  .showcase-text{
+    font-size: 1rem;
+  }
+
+  .showcase-button{
+    padding: .8rem 1.25rem;
+    font-size: .65rem;
+  }
+
+  
+  
+  /*Fragrence section*/
+  .fragrence-image-container{
+    height: 76vh;
+  }
+  
+  /*Text on the old money fragrence image*/
+  .fragrence-description{
+    width: 80%;
+    font-size: .82rem;
+  }
+
+  /*Section B - image for the newsletter section*/
+  .section-b{
+    height: 76vh;
+  }
+  
+  /*Main blog title above the blog section*/
+  .blog-section-title{
+    font-size: .85rem;
+  }
+  
+  /*Blog subtitle above the blog section*/
+  .blog-section-subtitle{
+    font-size: 1.3rem;
+    margin-bottom: 0;
+  }
+  
+  /*Blog container holding all 3 blogs*/
+  .blog-container{
+    margin: 3rem auto 4rem auto;
+    width: 97%;
+  }
+
+  .blog-img-container{
+    height: 35vh;
+  }
+}
